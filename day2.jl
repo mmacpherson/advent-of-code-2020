@@ -54,3 +54,4 @@ end
 [day2_1(ex02), day2_1(in02)]
 
 [day2_2(ex02), day2_2(in02)]
+
