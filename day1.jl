@@ -1,14 +1,17 @@
-function read_numbers(fname, dtype=Int)
-	map(e -> parse(dtype, e), readlines(fname))
+function read_numbers(fname, dtype = Int)
+    map(e -> parse(dtype, e), readlines(fname))
 end
 
 
 function day1_1(input)
-	[a * b for a=input, b=input if (a < b) && (a + b == 2020)]
+    [a * b for a = input, b = input if (a < b) && (a + b == 2020)]
 end
 
 function day1_2(input)
-	[a * b * c for a=input, b=input, c=input if (a < b) && (b < c) && (a + b + c == 2020)]
+    [
+        a * b * c for
+        a = input, b = input, c = input if (a < b) && (b < c) && (a + b + c == 2020)
+    ]
 end
 
 ex01 = read_numbers("data/ex01")

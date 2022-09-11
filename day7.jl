@@ -23,7 +23,9 @@ function parse_input(fname)
             out[left] = nothing
             continue
         end
-        out[left] = [Dict("count" => parse(Int, split(e)[1]), "bag" => join(split(e)[2:end], " ")) for e = right]
+        out[left] = [
+            Dict("count" => parse(Int, split(e)[1]), "bag" => join(split(e)[2:end], " ")) for e in right
+        ]
     end
     out
 end

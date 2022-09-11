@@ -24,7 +24,7 @@ end
 ex06 = parse_input("data/ex06")
 in06 = parse_input("data/in06")
 
-count_distinct(xs) = length(reduce(union, [Set(collect(x)) for x = xs]))
+count_distinct(xs) = length(reduce(union, [Set(collect(x)) for x in xs]))
 day6_1(input) = sum(map(count_distinct, input))
 
 function counts(s)
@@ -41,7 +41,7 @@ end
 
 function count_unanimous(xs)
     denom = length(xs)
-    sum([v == denom for v = values(counts(join(xs)))])
+    sum([v == denom for v in values(counts(join(xs)))])
 end
 
 day6_2(input) = sum(map(count_unanimous, input))

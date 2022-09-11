@@ -31,7 +31,7 @@ required = Set([
     "hcl",
     "hgt",
     "iyr",
-    "pid"
+    "pid",
 ])
 
 ex04 = parse_input("data/ex04")
@@ -98,7 +98,7 @@ function day4_2(input)
             valid_height(passport["hgt"]),
             !isnothing(match(r"^#[0-9a-f]{6}$", passport["hcl"])),
             passport["ecl"] in ["amb", "blu", "brn", "gry", "grn", "hzl", "oth"],
-            !isnothing(match(r"^[0-9]{9}$", passport["pid"]))
+            !isnothing(match(r"^[0-9]{9}$", passport["pid"])),
         )
             num_valid += 1
         end
