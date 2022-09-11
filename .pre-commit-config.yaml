@@ -6,7 +6,7 @@ repos:
       - id: check-yaml
       - id: end-of-file-fixer
       - id: trailing-whitespace
-  - repo: https://github.com/scrambldchannel/pre-commit-julia
-    rev: HEAD
+  - repo: https://github.com/mmacpherson/pre-commit-julia
+    rev: speed-up-format-sh
     hooks:
       - id: format_julia
