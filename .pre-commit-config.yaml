@@ -7,6 +7,6 @@ repos:
       - id: end-of-file-fixer
       - id: trailing-whitespace
   - repo: https://github.com/mmacpherson/pre-commit-julia
-    rev: b45d9de5d7d660414bbac1ba540c01b4cc230757
+    rev: f98133635b30441f655cf7bf339cafbb46b77263
     hooks:
       - id: format_julia
